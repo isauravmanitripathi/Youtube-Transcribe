@@ -1,8 +1,9 @@
-import urllib
+import urllib2
 import xml.etree.ElementTree as ET
 
 def get_transcript(timedtext_url):
-    handle = urllib.urlopen(timedtext_url)
+    handle = urllib2.urlopen(timedtext_url)
+
     contents = handle.read()
 
 
